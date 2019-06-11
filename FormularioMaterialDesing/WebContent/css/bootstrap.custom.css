@@ -1,0 +1,40 @@
+/**
+ * Overwrite some bootstrap's classes to implement a new desing for Etica.
+ * 
+ * @autor: Fernando Ismael Pacheco Sánchez (ferpaxecosanxez.com)
+ */
+
+/**
+ * Color label y línea inferior en formulario de campo.
+ * 1º clase hace referencia al contendor padre y la 2º a todas las clases que
+ * sean de ese tipo y que estén dentro del padre.
+ */
+.form-group .bmd-label-floating {
+	color: #8E8E8E;
+}
+.form-group .form-control {
+	color: green;
+	background-image: linear-gradient(0deg,#19028C 2px,rgba(0,150,136,0) 0),linear-gradient(0deg, #8E8E8E 1px,transparent 0);
+}
+	/**
+	 * Quitar sombra de borde y poner color cuando escribimos.
+	 */
+	.form-group .form-control:focus {
+		box-shadow: none;
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+		color: yellow;
+	}
+
+/**
+ * Cuando ponemos el foco en un campo.
+ * Cuando ponemos dos clases juntas, significa eso, que deben aparecer juntas
+ * en un mismo item de DOM, por ejemplo, un div.
+ */
+.form-group.is-focused .bmd-label-floating {
+    color: #19028c;
+}
+.form-group.is-focused .form-control {
+	background-image: linear-gradient(0deg,#19028c 2px,rgba(0,150,136,0) 0),linear-gradient(0deg, #8E8E8E 1px,transparent 0);
+}
+
