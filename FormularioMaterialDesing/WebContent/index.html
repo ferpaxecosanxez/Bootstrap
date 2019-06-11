@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Common -->
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-material-design.min.css" />
+
+    <!-- No common -->
+	<title>FormBMD</title>
+</head>
+
+<body>
+    <header class="container-fluid bg-dark-static">
+        <!-- header common -->
+    </header>
+
+    <main class="container">
+		<form>
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="nombre" class="bmd-label-floating">Nombre</label>
+					<input type="email" class="form-control" id="nombre">
+					<span class="bmd-help">Escriba su nombre.</span>
+				</div>
+				
+				<div class="form-group col-md-6">
+					<label for="apellido" class="bmd-label-floating">Apellido</label>
+					<input type="email" class="form-control" id="apellido">
+					<span class="bmd-help">Escriba su apellido</span>
+				</div>
+			</div>
+			
+			<div class="form-group">
+					<label for="direccion" class="bmd-label-floating">Dirección</label>
+					<input type="email" class="form-control" id="direccion">
+					<span class="bmd-help">Escriba su dirección</span>
+				</div>
+		</form>
+		
+    </main>
+
+    <footer class="container-fluid bg-dark-static text-dark-static">
+        <!-- footer common -->
+    </footer>
+    
+    <!-- Script common -->
+	<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-material-design.min.js"></script>
+	
+    <!-- Script no common -->
+    <script type="text/javascript">
+        window.onload = function() {
+        	// Cargar efectos BMD.
+        	$('body').bootstrapMaterialDesign();
+        }
+    </script>
+</body>
+</html>
