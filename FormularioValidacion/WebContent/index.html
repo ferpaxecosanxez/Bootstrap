@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Common -->
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300" />
+    <link rel="stylesheet" type='text/css' href="css/bootstrap.min.css" />
+    <!-- No common -->
+    <title>Validación</title>
+</head>
+
+<body>
+    <header class="container-fluid bg-dark-static">
+        <!-- header common -->
+    </header>
+
+    <main class="container">
+		<form method="get">
+			<div class="form-group col-md-6 mb-3">
+				<label for="city">City</label>
+				<input type="text" class="form-control" name="city" id="city">
+				<div class="invalid-feedback">
+					Please provide a valid city.
+				</div>
+			</div>
+			
+			<div class="col-md-3 mb-3 md-form">
+				<label for="state">State</label>
+				<input type="text" class="form-control" name="state" id="state">
+				<div class="invalid-feedback">
+					Please provide a valid state.
+				</div>
+			</div>
+		  
+			<button class="btn btn-primary btn-sm btn-rounded" type="submit">Enviar</button>
+		</form>
+    </main>
+
+    <footer class="container-fluid bg-dark-static text-dark-static">
+        <!-- footer common -->
+    </footer>
+    
+    <!-- Script common -->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/custom/functions.custom.js"></script>
+	
+	<!-- Script no common -->
+    <script type="text/javascript">
+        window.onload = function() {
+        	validateForm();
+        }
+    </script>
+</body>
+</html>
