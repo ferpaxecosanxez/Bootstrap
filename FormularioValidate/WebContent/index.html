@@ -5,11 +5,12 @@
     <!-- Common -->
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300" />
-    <link rel="stylesheet" type='text/css' href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/toastr.custom.css" />
+    <link rel="stylesheet" type='text/css' href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/toastr.min.css" />
+    
     <!-- No common -->
-    <title>Notify</title>
+    <link rel="stylesheet" type="text/css" href="css/custom/toastr.custom.css" />
+    <title>Notificación</title>
 </head>
 
 <body>
@@ -18,36 +19,7 @@
     </header>
 
     <main class="container">
-		<button type="button" class="btn btn-primary" onclick="showNotify()">Primario</button>
-		
-		<div class="row py-5" ></div>
-		
-		<form method="get" id="fips">
-			<div class="form-group col-md-6 mb-3">
-				<label for="city">City</label>
-				<input type="text" class="form-control" name="city" id="city">
-				<div class="invalid-feedback">
-					Please provide a valid city.
-				</div>
-			</div>
-			
-			<div class="col-md-3 mb-3 md-form">
-				<label for="state">State</label>
-				<input type="text" class="form-control" name="state" id="state">
-				<div class="invalid-feedback">
-					Please provide a valid state.
-				</div>
-			</div>
-<div class="col-md-3 mb-3 md-form">
-<label for="validationCustom052">Zip</label>
-<input type="text" class="form-control" id="validationCustom052">
-<div class="invalid-feedback">
-Please provide a valid zip.
-</div>
-</div>
-		  
-			<button class="btn btn-primary btn-sm btn-rounded" type="submit">Enviar</button>
-		</form>
+		<button type="button" class="btn btn-primary" onclick="showNotify()">Lanzar Notificación</button>
     </main>
 
     <footer class="container-fluid bg-dark-static text-dark-static">
@@ -55,18 +27,14 @@ Please provide a valid zip.
     </footer>
     
     <!-- Script common -->
-	<script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.12.0/validate.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
-	<script src="js/jquery.custom.js"></script>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/toastr.min.js"></script>
 	
 	<!-- Script no common -->
+	<script src="js/custom/functions.custom.js"></script>
     <script type="text/javascript">
         window.onload = function() {
-        	validateForm();
+        	// Nada.
         }
     </script>
 </body>

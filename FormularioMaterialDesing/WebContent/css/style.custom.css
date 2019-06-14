@@ -9,6 +9,10 @@
  * 1º clase hace referencia al contendor padre y la 2º a todas las clases que
  * sean de ese tipo y que estén dentro del padre.
  */
+ body {
+ 	background-color: #fff;
+ }
+ 
 .form-group .bmd-label-floating {
 	color: #8E8E8E;
 }
