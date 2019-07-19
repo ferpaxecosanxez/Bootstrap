@@ -1,0 +1,532 @@
+/**
+ * Clases para aplicar efectos de recorrido al mostrar/ocultar menú.
+ */	
+#menu-left.active {
+	margin-left: 250px;
+}
+
+#menu-right.active {
+	margin-right: 250px;
+}
+/**/
+
+/**
+ * Capa que cubre todo cuando está activo el menú izquierdo.
+ */
+#overlay-menu-left {
+	background: rgba(0, 0, 0, 0.5);
+	display: none;
+	height: 100vh;
+	position: fixed;
+	top: 0px;
+	transition: all 0.5s;
+	z-index: 30;
+}
+	#overlay-menu-left.active {
+		display: block;
+	}
+/**/
+
+/**
+ * Primera capa que aparece cuando hacemos login. Su funcionalidad es ocultar
+ * todo mientras carga todo el contenido de la aplicación.
+ */	
+#overlay-load-page {
+	background-color: #FFFFFF;
+	height: 100vh;
+	z-index: 1000;
+	position: fixed;
+	top: 0px;
+}
+	#overlay-load-page.d-flex.desactived {
+		display: none !important;
+	}
+/**/	
+
+.btn-etica,
+.btn-etica-white {
+	background: transparent;
+ 	border: 0px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+ 	border-radius: 3px;
+	color: #1F1646;
+	cursor: pointer;
+	font-size: 12px;
+	outline: 0px;
+ 	margin: 0px;
+ 	padding: 0px;
+}
+	.btn-etica:hover,
+	.btn-etica:focus {
+		background: transparent;
+		box-shadow: 0px 0px 5px 0px rgba(31,22,70,0.5);
+		-webkit-box-shadow: 0px 0px 5px 0px rgba(31,22,70,0.5);
+		-moz-box-shadow: 0px 0px 5px 0px rgba(31,22,70,0.5);
+		outline: 0px;
+	}
+	
+	.btn-etica-white:hover,
+	.btn-etica-white:focus {
+		background: transparent;
+		box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.5);
+		-webkit-box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.5);
+		-moz-box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.5);
+		outline: 0px;
+	}
+
+/**
+ * Botones con ancho fijo: small, medium y large.
+ */	
+.btn-etica-small {
+	
+}
+
+.btn-etica-medium {
+	
+}
+
+.btn-etica-large {
+	
+}
+/**/
+
+.btn-etica-header {
+	padding: 5px 10px;
+}
+
+.btn-etica-body {
+	
+}
+
+/**
+ * Clases para el botón que contiene una acción e imagen. Esta clase se debe usar junto con la clase
+ * "img-size-24" adjunta en <IMG> ya que es la óptima para todas las resoluciones.
+ *
+ * Si la imagen es lineal, usaremos "img-size-20", por ejemplo, el icono de maximizar. Usaremos más padding
+ * ya que al ser lineal la imagen se verá igual de bien pero con mejor estilo.
+ */
+.btn-with-img {
+	height: 24px;
+	width: 24px;
+}
+	.btn-with-img > .img-size-24 {
+		padding: 1px;
+	}
+	
+	.btn-with-img > .img-size-20 {
+		padding: 2px;
+	}
+/**/
+
+/**
+ * Clase para botones que contiene texto e icono.
+ *
+ * La imagen del botón debe pertenecer a la carpeta "64px".
+ */
+.btn-etica-mixto {
+	padding: 7px 10px;
+}
+	.btn-etica-mixto > .texto-btn-mixto {
+		color: #1F1646;
+    	font-size: 12px;
+    	padding-right: 7px;
+	}
+	.btn-etica-mixto > .img-btn-mixto {
+		width: 16px;
+		height: 16px;
+	}
+/**/
+
+
+
+.btn-menu-right-header {
+	
+}
+
+.btn-menu-right-body {
+	
+}
+
+/**
+ * Clases para los botónes menú hamburguesa.
+ */
+.btn-menu-left {
+	top: 15px;
+	position: fixed;
+	left: 25px;
+}
+
+.btn-menu-right {
+	top: 15px;
+	position: fixed;
+    right: 25px;
+}
+/**/
+
+.container.container-etica {
+	transition: all 0.5s;
+}
+
+.container-main-etica {
+	padding-top: 64px;
+	transition: all 1s;
+	width: 100%;
+}
+
+.container-main-etica-header {
+	padding: 0px 15px;
+	width: 90%;
+	margin: auto;
+}
+
+.container-main-etica-body {
+
+}
+
+.container-spinner {
+	background: rgba(0, 0, 0, 0.5);
+	display: none;
+	/*height, calculado en functions.iface.js */
+	
+	position: fixed;
+	top: 64px;
+	
+	z-index: 12;
+}
+	.container-spinner.active {
+		display: block;
+	}
+
+.icon-etica-head {
+	cursor: pointer;
+	width: 106px;
+}
+
+.iface-header {
+	background-color: #FFFFFF;
+	box-shadow: 0px 0px 5px 0px rgba(31,22,70,0.5);
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(31,22,70,0.5);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(31,22,70,0.5);
+	font-size: 12px;
+	height: 64px;
+	
+	position: fixed;
+	
+	z-index: 10;
+	transition: all 0.5s;
+}
+
+.iface-main {
+	background-color: #FFFFFF;
+	font-size: 12px;
+	z-index: 0px;
+}
+
+.iface-footer {
+	background-color: #FFFFFF;
+	box-shadow: 0px 0px 5px 0px rgba(31,22,70,0.5);
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(31,22,70,0.5);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(31,22,70,0.5);
+	font-size: 11px;
+	
+	position: fixed;
+	bottom: 0px;
+	
+	z-index: 10;
+}
+
+.iface-menu-left {
+	background-color: #272145;
+	color: #FFFFFF;
+	
+	position: fixed;
+	top: 0px;
+	left: -250px;
+	
+	height: 100vh;
+	width: 250px;
+	
+	transition: all 0.5s;
+	z-index: 40;
+}
+
+.iface-menu-left > .sidebar-header {
+	background-image: url("../../../img/bootstrap/background/background_menu_header.png");
+	border-bottom: solid 1px #AAAAAA;
+	color: #AAAAAA;
+	padding: 15px 10px;
+}
+
+.iface-menu-left > .sidebar-body {
+	padding: 8px 0px 0px 0px;
+}
+
+.iface-menu-right {
+	background-color: #FFFFFF;
+	border: solid 1px rgba(31,22,70,0.5);
+	color: #1F1646;
+	
+	position: fixed;
+	top: 64px;
+	right: -250px;
+	
+	/* height: Calculado en "functions.iface.js" */
+	width: 250px;
+	
+	transition: all 1s;
+	z-index: 11;
+}
+	
+.iface-menu-right > .sidebar-header {
+	border-bottom: 1px solid rgba(31,22,70,0.5);
+	padding: 10px 0px;
+	max-width: 100%;
+}	
+
+.iface-menu-right > .sidebar-body {
+	padding: 0px;
+	max-width: 100%;
+}
+
+/**
+ * Todos y únicamente los tag <IFRAME> debe de llevar esta clase.
+ */
+.iframe-container-etica {
+	width: 100%;
+}
+/**/
+
+/**
+ * Estas clases las usaremos cuando deseamos tener una imagen de un tamaño concreto y 
+ * no tengan acción asociada.
+ *
+ * La resolución es más por motivos de visualización de detalles.
+ * 10px: Se corresponde con imágenes almacenadas en la carpeta "32px".
+ * 18px: Se corresponde con imágenes almacenadas en la carpeta "64px".
+ * 20px: Se corresponde con imágenes almacenadas en la carpeta "64px".
+ * 24px: Se corresponde con imágenes almacenadas en la carpeta "64px".
+ */
+.img-size-10 {
+	width: 10px;
+	height: 10px;
+}
+
+.img-size-18 {
+	width: 18px;
+	height: 18px;
+}
+
+.img-size-20 {
+	width: 20px;
+	height: 20px;
+}
+
+.img-size-24 {
+	width: 24px;
+	height: 24px;
+}
+/**/
+
+/**
+ * Estas clases se usan cuando usamos tag <A> que se corresponden con links.
+ */
+.link-texto {
+	color: #007BFF;
+}
+	.link-texto:hover {
+		color: #007BFF;
+		text-decoration: none;
+	}
+
+.link-img {
+	display: flex !important;
+}
+/**/
+
+.mt-2px {
+	margin-top: 2px;
+}
+
+/**
+ * Clase que se aplica cuando maximizamos el menú derecho. Se usa en el fichero
+ * "functions.iface.js".
+ */
+.maximize-active {
+	width: 100%;
+	height: 100vh !important;
+	top: 0px;
+	transition: all 1s;
+}
+/**/
+
+/**
+ * Estilo para el menú de usario.
+ */
+.etica-menu {
+	
+}
+
+.etica-menu .item-level-0 {
+	background: #272145;
+	color: #AAAAAA;
+	display: block;
+	font-size: 12px;
+	outline: 0px;
+	padding: 5px 20px 3px 10px;
+	transition: all 0.3s;
+}
+	.etica-menu .item-level-0:hover {
+		background: #2D264F;
+		color: #FFFFFF;
+		outline: 0px;
+		text-decoration: none;
+	}
+	.item-level-0.actived {
+		background: #2D264F;
+		color: #FFFFFF;
+	}
+	
+.etica-menu .item-level-1 {
+	background: #2D264F;
+	color: #AAAAAA;
+	display: block;
+	font-size: 13px;
+	outline: 0px;
+	padding: 3.5px 20px 3.5px 20px;
+	transition: all 0.3s;
+}
+	.etica-menu .item-level-1:hover {
+		background: #332B59;
+		color: #FFFFFF;
+		outline: 0px;
+		text-decoration: none;
+	}
+	.item-level-1.actived {
+		background: #332B59;
+		color: #FFFFFF;
+	}
+	
+.etica-menu .item-level-2 {
+	background: #332B59;
+	color: #AAAAAA;
+	display: block;
+	font-size: 12.5px;
+	outline: 0px;
+	padding: 3px 20px 3px 30px;
+	transition: all 0.3s;
+}
+	.etica-menu .item-level-2:hover {
+		background: #383063;
+		color: #FFFFFF;
+		outline: 0px;
+		text-decoration: none;
+	}
+	.item-level-2.actived {
+		background: #383063;
+		color: #FFFFFF;
+	}
+	
+.etica-menu .item-level-3 {
+	background: #383063;
+	color: #AAAAAA;
+	display: block;
+	font-size: 12px;
+	outline: 0px;
+	padding: 2.5px 20px 2.5px 40px;
+	transition: all 0.3s;
+}
+	.etica-menu .item-level-3:hover {
+		background: #3E356E;
+		color: #FFFFFF;
+		outline: 0px;
+		text-decoration: none;
+	}
+	.item-level-3.actived {
+		background: #3E356E;
+		color: #FFFFFF;
+	}
+
+.etica-menu .dropdown-toggle:focus::after {
+	transition: all 0.3s;
+}
+
+.etica-menu .dropdown-toggle[aria-expanded="false"]::after {
+	display: block;
+	position: absolute;
+	right: 20px;
+	transform: translateY(-12px) rotate(-90deg);
+	border-top: 4px solid;
+}
+
+.etica-menu .item-level-1.dropdown-toggle[aria-expanded="true"]::after,
+.etica-menu .item-level-2.dropdown-toggle[aria-expanded="true"]::after {
+	display: block;
+	position: absolute;
+	right: 20px;
+	transform: translateY(-12px) rotate(0deg);
+	
+	border-top: 4px solid;
+}
+
+.item-no-children.visited {
+	color: #FFFFFF;
+}
+/**/
+
+/**
+ * Esta clase se usa cuando abrimos el menú derecho (Agenda). El padding agregado es igual al ancho
+ * del menú derecho, con ello desplaza el contenedor main.
+ *
+ * Su uso se hace con JQuery en el "functions.iface.js".
+ */
+.padding-add {
+	padding-right: 250px;
+}
+/**/
+
+/**
+ * Estas clases se usan para dar color a las secciones genéricas como iface-header, iface-main e iface-footer,
+ * ya que cada uno de ellos ya tiene definido el tamaño de fuente.
+ *
+ * Sin embargo, podemos usar estas clases para darle color a cierto texto en concreto. Si queremos darle color
+ * y tamaño, tenemos que usar las clases que están a continuación.
+ */
+.text-etica {
+	color: #1F1646;
+}
+
+.text-etica-bold {
+	color: #1F1646;
+	font-weight:bold;
+}
+/**/
+
+/**
+ * Clases que tiene un tamaño de fuente definido.
+ */
+.text-etica-small {
+	color: #1F1646;
+	font-size: 12px;
+}
+
+.text-etica-medium {
+	color: #1F1646;
+	font-size: 14px;
+}
+
+.text-etica-large {
+	color: #1F1646;
+	font-size: 16px;
+}
+/**/
+
+/**
+ * Cambios en clases para que la página sea responsive design.
+ */
+@media (min-width: 1400px) {
+	.container.container-etica {
+	    max-width: 1350px;
+	}
+}
+/**/

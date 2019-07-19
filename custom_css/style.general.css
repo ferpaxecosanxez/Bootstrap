@@ -1,0 +1,777 @@
+/**
+ * Nuevas clases de estilo donde se aplica paleta de colores Etica.
+ *
+ * Se aplica los ficheros:
+ * gims-*.jsp
+ *
+ * @autor: Fernando Ismael Pacheco sanchez(fpacheco@calculo-sa.es),
+ 		Aida Urbano Vidal (aurbado@calculo-sa.es)
+ */
+
+.bg-etica-grey{
+	background-color: #fafafa;
+}
+
+.bg-etica-grey-medium{
+	background-color: #f7f5f5;
+}
+
+.bg-etica-blue{
+	background-color: #1F1646;
+	color: #FFFFFF;
+}
+.bg-etica-blue-2{
+	background-color: #625B7D;
+	color: #FFFFFF;
+}
+
+.navbar-calculo {
+	height: 90px;
+}
+
+.menu {
+	cursor: pointer;
+}
+
+.breadcrumb {
+	background: transparent;
+}
+ 
+
+
+.texto-cabecera {
+	color: white;
+	padding: 10px;
+}
+
+.nav-tabs {
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px
+		rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12)
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+	border-color: #dee2e6 #dee2e6 #233842;
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+	border-color: #e9ecef #e9ecef #233842;
+	background-color: rgba(0, 0, 0, 0.02);
+	outline: none;
+}
+
+.checkbox-decorator {
+	padding-top: .25rem !important;
+	padding-bottom: .25rem !important;
+}
+
+.color-enviada {
+	color: #F9B426;
+}
+
+.color-duplicada {
+	color: #0176B7;
+}
+
+.color-provisional {
+	color: #7A49B3;
+}
+
+.color-aceptada {
+	color: #4CB349;
+}
+
+.nav-tabs .dropdown-item {
+	min-width: 18rem;
+}
+
+.table-pagination {
+	border-top: 1px solid rgba(0, 0, 0, .1);
+}
+/* pendiente validacion */
+/* .form-row a.btn { */
+/* 	position: relative; */
+/* 	top: -45px; */
+/* } */
+/* select { */
+/* 	height: 2rem !important; */
+/* } */
+
+.section {
+	background-color: rgba(0, 0, 0, 0.03);
+}
+
+.list-group-submenu-submenu .list-group-item div span {
+	width: 35px;
+}
+
+.bg-menu-left {
+	background-image: url("../../../img/bootstrap/background/bg-menu-left.png");
+}
+
+.list-group-submenu, .list-group-submenu-submenu {
+	padding-left: 0;
+	list-style: none
+}
+
+.badge-critica {
+	background: #F53F3F;
+}
+
+.badge-pendiente {
+	background: #3F93F5;
+}
+
+.badge-normal {
+	background: #F5BE3F;
+}
+
+.badge-urgente {
+	background: #F5893F;
+}
+
+.badge-tratada {
+	background: #4CB349;
+}
+
+.requiered-red{
+	color: red;	
+}
+/* auv*/
+.container-nav-etica{
+	
+}
+.nav-item-etica{
+	background-color: #1F1646;
+	color: white; 
+	border: 1px solid white;
+	border-radius: 5px;	
+	 
+}
+.nav-item-etica div {
+	font-size: 12px;
+}
+
+
+.pd-top-3{
+	padding-top: 3px;
+}
+.btn-etica-menu-points{
+	background-image: url("../../../img/bootstrap/iconos/64px/points-menu.png"); 
+	background-repeat: none;
+	background-size: 24px 24px;
+	border:none;
+}
+	.btn-etica-menu-points:hover, 
+	.btn-etica-menu-points:focus{
+		background-image: url("../../../img/bootstrap/iconos/64px/points-menu-hover.png"); 
+		background-repeat: none;
+		background-size: 24px 24px;
+		border:none;
+		cursor: pointer;
+	}
+	
+.etica-menu-dropdown {
+	display: fixed;
+	background-color: red;
+	width: 300px;
+	height: 10px;
+	}
+.text-etica-grey {
+	color: #dfdfdf;
+}
+
+.text-etica-grey-bold {
+	color: #dfdfdf;
+	font-weight:bold;
+	font-size: 12px;
+}
+.text-etica-grey-small {
+	color: #dfdfdf;
+	font-size: 12px;
+}
+
+.text-etica-grey-medium {
+	color: #dfdfdf;
+	font-size: 14px;
+}
+
+.text-etica-grey-large {
+	color: #dfdfdf;
+	font-size: 16px;
+}
+.brd-etica-blue {
+	border: solid 1px #1F1646;
+}
+.brd-etica-bottom-blue{
+	border-bottom: solid 1px #1F1646;
+}
+.brd-etica-blue-2 {
+	border: solid 1px #342E52;
+}
+.brd-etica-bottom-blue-2{
+	border-bottom: solid 1px #342E52;
+}
+
+/**
+ * Clases que se deben de usar en el estilo de cualquier tabla resultado de datos con estilo reverse
+ */
+ 
+.table-etica-reverse {
+	margin-top:10px;
+}
+	.table-etica-reverse thead th{
+		background-color:  #f7f5f5;
+	}
+	.table-etica-reverse tbody td
+	 {
+		color: #1C1C1C;
+		font-size: 12px;
+		padding: 6px 12px;
+		border: solid 1px #AAAAAA;
+	}
+	.table-etica-reverse tbody tr td:nth-child(even) {
+	    background-color: #FFFFFF;
+	    font-size: 12px;
+	}
+	.table-etica-reverse tbody tr td:nth-child(odd) { 
+	    background-color: #F5F5F5;
+	    font-size: 13px;
+	}
+
+.etica-back{
+	background-image: url("../../../img/bootstrap/iconos/64px/double_arrow_left_orange.png"); 
+	background-repeat: none;
+	background-size: 20px 20px;
+	width: 20px;
+	height: 20px;
+	background-color: #ffffff;
+	border:none;
+}
+.etica-back:hover,
+.etica-back:focus{
+	background-image: url("../../../img/bootstrap/iconos/64px/double_arrow_left_orange_hover.png"); 
+	outline: none;
+} 
+
+
+.etica-user{
+	border: 0;
+	width: 17px;
+	height: 17px;
+	margin-top: -5px;
+	margin-left: 5px;
+}
+
+/* fips */
+
+
+body {
+	background: #FFFFFF;
+}
+
+.bg-calculo-secondary {
+	background-image: url("../../../img/bootstrap/background/background_secondary.jpg"); 
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.bg-calculo-primary {
+	background-image: url("../../../img/bootstrap/background/background_primary.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/**
+ * Sombra para los contenedores de etica. Esta clase normalmente se asocia a la clase
+ * "row" que forma un contenedor dentro de "container-etica".
+ */
+.box-shadow-etica {
+	-webkit-box-shadow: 0px 2.5px 2px 1px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 2.5px 2px 1px rgba(0,0,0,0.2);
+	box-shadow: 0px 2.5px 2px 1px rgba(0,0,0,0.2);
+}
+/**/
+
+/**
+ * Clase para agregar borde al contenedor, normalmente de fondo blanco.
+ */
+.brd-etica-grey {
+	border: solid 1px #AAAAAA;
+}
+
+.brd-etica-top-grey {
+	border-top: solid 1px #AAAAAA;
+}
+
+.brd-etica-bottom-grey {
+	border-bottom: solid 1px #AAAAAA;
+}
+/**/
+
+.btn-etica {
+	background: transparent;
+ 	border: 0px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+ 	border-radius: 3px;
+	color: #1F1646;
+	cursor: pointer;
+	font-size: 11px;
+	padding: 8px 10px 7px 10px;
+ 	margin: 0px;
+}
+	.btn-etica:hover,
+	.btn-etica:focus {
+		background: transparent;
+		outline: none;
+	}
+
+.btn-etica-disabled {
+	border: solid 1px #AAAAAA;
+	color: #AAAAAA !important;
+	cursor: not-allowed;
+	opacity: 1 !important;
+}
+	.btn-etica-disabled:hover {
+		border: solid 1px #AAAAAA !important;
+	}
+
+/**
+ * Clase para botones que contiene texto e icono (mixto).
+ *
+ * La imagen del botón debe pertenecer a la carpeta "64px".
+ */
+.btn-etica-mixto {
+	background-color: #1F1646;
+}
+	.btn-etica-mixto:hover {
+		background-color: #30226E;
+	}	
+	.btn-etica-mixto > .texto-btn-mixto {
+		color: #FFFFFF;
+		display: inline-block;
+    	vertical-align: middle;
+    	padding-left: 2px;
+	}
+	.btn-etica-mixto > .img-btn-mixto {
+		width: 17px;
+		height: 17px;
+	}
+/**/
+
+.btn-etica-white {
+	background: #FFFFFF;
+	border: solid 1px #1F1646;
+}
+	.btn-etica-white:hover,
+	.btn-etica-white:focus {
+		border: solid 1px #1F1646;
+		background-color: #DDDDDD;
+		outline: none;
+	}
+
+/**
+ * Clase para los botones que están fuera del contenedor formulario.
+ */
+.btn-etica-orange {
+	background: #E2A62A;
+	color: #FFFFFF;
+}
+	.btn-etica-orange:hover,
+	.btn-etica-orange:focus {
+		color: #FFFFFF;
+		background-color: #F8B425;
+		outline: none;
+	}
+/**/	
+
+
+/**
+ * Clase básica para los contenedores principales header, main y footer que se definen
+ * dentro de un fichero GIMS.
+ */
+.container-etica {
+	padding: 0px 15px;
+	margin: auto;
+	width: 90%;
+}
+/**/
+
+/**
+ * Clase para los ComboBox.
+ */
+.container-etica-combobox {
+	/* De momento se usa solo en JQuery */
+}
+
+.container-etica-combobox > .combobox-img-dropdown {
+	position: absolute;
+    bottom: 12px;
+    right: 6px;
+    z-index: -1;
+}
+	.combobox-img-dropdown > img {
+		width: 8px;
+		height: 10px;
+	}
+/**/
+
+.container-etica-result {
+	/*display: none;*/
+}
+
+/**
+ * Formluarios.
+ *
+ * Clases que utilizamos para los efectos de los formularios.
+ * Hacemos que el borde desaparezca, los label tengan colores diferentes dependiendo de si ya esta relleno o no
+ */
+.form-etica {
+	margin: auto;
+}
+ 
+.form-etica .bmd-form-group.is-filled input {
+	color: #1C1C1C;
+	font-size: 12px;
+}
+
+.form-etica .form-row > .form-group.is-focused > .bmd-label-floating,
+.form-etica .form-row > .form-group.is-filled > .bmd-label-floating {
+	padding-left: 5px;
+}
+
+.form-etica .form-group .bmd-label-floating {
+	color: #8E8E8E;
+	font-size: 12px;
+}
+
+.form-etica .form-group .form-control {
+    color: #000000;
+    /* El primer color es el que aparece en el borde del input cuando estamos haciendo focus en el.
+     * El segundo es el que aparece cuando salimos del focus del input.*/
+    background-image: linear-gradient(0deg,#1F1646 2px,rgba(0,150,136,0) 0),linear-gradient(0deg, #8E8E8E 1px,transparent 0);
+    font-size:12px;
+}
+	/* Quitamos sombra de bordes*/
+	.form-etica .form-group .form-control:focus {
+		box-shadow: none;
+	    -moz-box-shadow: none;
+		-webkit-box-shadow: none;
+		outline: none;
+	}
+	
+.form-etica .form-group.is-focused .bmd-label-floating {
+    color: #1F1646;
+    font-size:12px; 
+}
+
+.form-etica .form-group.is-focused .form-control {
+    background-image: linear-gradient(0deg,#1F1646 2px,rgba(0,150,136,0) 0),linear-gradient(0deg, #8E8E8E 1px,transparent 0);
+}
+/**/
+
+/**
+ * Clase para iconos que tiene un "onclick" asociado.
+ */
+.img-link {
+	border: 0px;
+	cursor: pointer;
+	outline: none;
+	margin-top: 2px;
+}
+	.img-link:hover,
+	.img-link:focus {
+		box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.5);
+		-webkit-box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.5);
+		-moz-box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.5);
+		outline: none;
+	}
+
+/**
+ * Estas clases las usaremos cuando deseamos tener una imagen de un tamaño concreto y 
+ * no tengan acción asociada.
+ *
+ * La resolución es más por motivos de visualización de detalles.
+ * 10px: Se corresponde con imágenes almacenadas en la carpeta "32px".
+ * 18px: Se corresponde con imágenes almacenadas en la carpeta "64px".
+ * 20px: Se corresponde con imágenes almacenadas en la carpeta "64px".
+ * 24px: Se corresponde con imágenes almacenadas en la carpeta "64px".
+ */
+.img-size-10 {
+	width: 10px;
+	height: 10px;
+}
+
+.img-size-18 {
+	width: 18px;
+	height: 18px;
+}
+
+.img-size-20 {
+	width: 20px;
+	height: 20px;
+}
+
+.img-size-24 {
+	width: 24px;
+	height: 24px;
+}
+/**/
+
+.mt-2px {
+	margin-top: 2px;
+}
+
+.pt-2px {
+	padding-top: 2px;
+}
+
+/**
+ * Clases que se aplican a DIV para separar contenedores.
+ *
+ * La clase "separate-small" tiene la misma altura que la clase boostrap "mt-3", es decir, si agregamos separadores
+ * small, y en algún momento tenemos que usar un contenedor que su visibilidad sea dinámico, este contenedor tendrá
+ * que tener si o si la clase "mt-3" para no romper la estructura de espaciado.
+ */
+.separate-extra-small {
+	padding-top: 10px;
+	width: 100%;
+}
+
+.separate-small {
+	padding-top: 16px;
+	width: 100%;
+}
+/**/
+
+/**
+ * Clases que se deben de usar en el estilo de cualquier tabla resultado de datos.
+ */
+.table-etica {
+	margin: 0px;
+}
+
+.table-etica thead th {
+	background: #FFFFFF;
+	color: #1C1C1C;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 10px 12px;
+	border-bottom: solid 1px #AAAAAA;
+}
+
+.table-etica thead th a {
+	color: #1F1646;
+}
+	.table-etica thead th a:hover,
+	.table-etica thead th a:focus {
+		text-decoration: none;
+		outline: none;
+	}
+
+.table-etica thead th a > img {
+	width: 7px;
+	height: 7px;
+	margin-bottom: 1px;
+}
+
+.table-etica tbody tr {
+	cursor: pointer;
+}
+
+.table-etica tbody tr:nth-child(even) {
+    background-color: #F5F5F5;
+}
+ 
+.table-etica tbody tr:nth-child(odd) {
+    background-color: #FFFFFF;
+}
+
+.table-etica tbody tr:hover {
+    background-color: #D4D4D4;
+    transition: all 0.5s;
+    outline: none;
+}
+
+.table-etica tbody td {
+	color: #1C1C1C;
+	font-size: 12px;
+	padding: 6px 12px;
+}
+
+.table-etica .column-hidden {
+	display: none;
+	margin: 0px;
+	padding: 0px;
+}
+/**/
+
+/**
+ * Tabla que se corresponde con los botones de paginación de
+ * una tabla de resultados.
+ */
+.table-etica-pagination {
+	border-collapse: separate;
+	border-spacing: 2px 0px;
+}
+
+.table-etica-pagination tbody td {
+ 	border: solid 1px #1F1646;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+ 	border-radius: 3px;
+ 	color: #1F1646;
+ 	cursor: pointer;
+ 	font-size: 12px;
+ 	padding: 0px;
+ 	text-align: center;
+ }
+	 .table-etica-pagination tbody td.page-actived {
+		 color: #FFFFFF;
+		 cursor: default;
+		 background: #332B59;
+		 padding: 3px 0px;
+		 width: 24px;
+	 }
+	 
+.table-etica-pagination tbody td a,
+.table-etica-pagination tbody td a.begin-final-pag {
+	cursor: pointer;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	display: block;
+	padding: 3px 0px;
+ 	width: 24px;
+ 	transition: all 0.3s;
+}
+	.table-etica-pagination tbody td a:hover,
+	.table-etica-pagination tbody td a.begin-final-pag:hover {
+		background: #DDDDDD;
+	}
+
+.table-etica-pagination tbody td a.begin-final-pag {
+	padding: 4px 0px;
+}
+
+.table-etica-pagination tbody td a.begin-final-pag > img {
+	width: 12px;
+    height: 12px;
+}
+/**/
+ 
+.hidden {
+	display: none;
+}
+ 
+/**
+ * Estas clases se usan para dar color a las secciones genéricas como header, main o footer,
+ * ya que cada uno de ellos ya tiene definido el tamaño de fuente.
+ *
+ * Sin embargo, podemos usar estas clases para darle color a cierto texto en concreto. Si queremos darle color
+ * y tamaño, tenemos que usar las clases que están a continuación.
+ */
+.text-etica {
+	color: #1F1646;
+}
+
+.text-etica-backup {
+	color: #1F1646;
+}
+	.text-etica-backup span:nth-child(1) {
+		font-size: 13px;
+		font-weight: bold;
+	}
+	.text-etica-backup span:nth-child(2) {
+		font-size: 12px;
+	}
+	
+.text-etica-backup-block {
+	color: #1F1646;
+}
+	.text-etica-backup-block span:nth-child(1) {
+		display: block;
+		font-size: 13px;
+		font-weight: bold;
+		width: 100%;
+	}
+	.text-etica-backup-block span:nth-child(2) {
+		display: block;
+		font-size: 12px;
+		width: 100%;
+	}
+
+.text-etica-bold {
+	color: #1F1646;
+	font-weight:bold;
+}
+
+.text-etica-white {
+	color: #FFFFFF;
+}
+
+.text-etica-white-bold {
+	color: #FFFFFF;
+	font-weight:bold;
+}
+/**/
+
+/**
+ * Clases que tiene un tamaño de fuente y color definido.
+ */
+.text-etica-small {
+	color: #1F1646;
+	font-size: 12px;
+}
+
+.text-etica-medium {
+	color: #1F1646;
+	font-size: 14px;
+}
+
+.text-etica-large {
+	color: #1F1646;
+	font-size: 16px;
+}
+
+.text-etica-white-small {
+	color: #FFFFFF;
+	font-size: 12px;
+}
+
+.text-etica-white-medium {
+	color: #FFFFFF;
+	font-size: 14px;
+}
+
+.text-etica-white-large {
+	color: #FFFFFF;
+	font-size: 16px;
+}
+/**/
+
+/**
+ * Clases para activar visibilidad a los contendores con contenido.
+ * deben estar asociados a una clase o ID que identifique a un botón, cuya acción
+ * obtenga resultados.
+ */
+ .view-result-active {
+ 	display: block;
+ }
+<<<<<<< .merge_file_a16744
+ /**/
+=======
+/**/
+
+/**
+ * Clases que se usan en muchos sitios y no podemos sustituirlas sin invertir bastante tiempo porque aparecen en ficheros JS
+ * y ficheros JSP (Dentro de los script).
+ */
+.selectedRow {
+	background: #C4C1D6;
+}
+/**/
+
+
+  
+>>>>>>> .merge_file_a16184

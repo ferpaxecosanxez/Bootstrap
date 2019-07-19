@@ -17,7 +17,8 @@
 	color: #8E8E8E;
 }
 .form-group .form-control {
-	color: green;
+	color: red;
+	/* El primer color es cuando hacemos focus y el segundo cuando no estamos en focus*/
 	background-image: linear-gradient(0deg,#19028C 2px,rgba(0,150,136,0) 0),linear-gradient(0deg, #8E8E8E 1px,transparent 0);
 }
 	/**

@@ -21,16 +21,28 @@
     <main class="container">
 		<form>
 			<div class="form-row">
-				<div class="form-group col-md-6">
+				<div class="form-group col-md-4">
 					<label for="nombre" class="bmd-label-floating">Nombre</label>
-					<input type="text" class="form-control" id="nombre">
+					<input type="text" class="form-control" id="nombre"><!-- El id para <html: se llama "styleId" -->
 					<span class="bmd-help">Escriba su nombre.</span>
 				</div>
 				
-				<div class="form-group col-md-6">
+				<div class="form-group col-md-4">
 					<label for="apellido" class="bmd-label-floating">Apellido</label>
 					<input type="text" class="form-control" id="apellido">
 					<span class="bmd-help">Escriba su apellido</span>
+				</div>
+				
+				<div class="form-group col-md-4 container-etica-combobox">
+					<label for="exampleSelect1" class="bmd-label-floating">Example select</label>
+				    <select class="form-control" id="exampleSelect1">
+				      <option></option>
+				      <option>1</option>
+				      <option>2</option>
+				      <option>3</option>
+				      <option>4</option>
+				      <option>5</option>
+				    </select>
 				</div>
 			</div>
 			
@@ -60,6 +72,14 @@
         window.onload = function() {
         	// Cargar efectos BMD.
         	$('body').bootstrapMaterialDesign();
+        	test();
+        }
+        
+        function test() {
+        	if ($('.container-etica-combobox > select option:selected').text().length == 0) {
+        		// Remover clase
+        		$('.container-etica-combobox').removeClass('is-filled');
+        	}
         }
     </script>
 </body>
